@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+        .font{
+          font-family: "Poppins", sans-serif;
+        }
+        .container2{
+          max-width: 1170px;
+          width: 100%;
+        }
+    </style>
+
+</head>
+<body class="font">
+    <header class="container2 mx-auto w-full pt-6">
+      <section class="pb-4 px-2 lg:px-0">
+        <nav class="flex justify-between items-center">
+          <div>
+            <a href=""><h1 class="text-[36px] font-bold text-red-300">Go<span class="text-green-300">Bus</span></h1></a>
+          </div>
+
+          <div class="hidden lg:block flex space-x-5 capitalize text-[18px] font-medium text-gray-800">
+            <a href="" class="text-red-400">home</a>
+            <a href="">about</a>
+            <a href="">destination</a>
+            <a href="">search</a>
+          </div>
+
+          <div class="flex justify-between items-center space-x-3">
+           <div>
+            <button id="scrollToTopButton" class="flex space-x-3 btn rounded-xl px-6 py-2" style="border: 2px solid lightgreen;">
+              <h1 class="text-green-500 text-[18px]">Bus</h1>
+              <img class="" src="images/bus-icon.png" alt="">
+              
+            </button>
+           </div>
+           <div class="block lg:hidden dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn m-1"><img class="h-[24px] w-[24px] bg-gray-100"  src="dropdown.png" alt=""></div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-red-400">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          </div>
+
+          
+        </nav>
+      </section>
+      <section>
+        <div class=" carousel px-2 lg:w-full lg:px-0">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner.png" class="w-full" />
+            <div class="absolute space-y-2 flex flex-col items-center justify-center transform -translate-y-1/2 left-5 right-5 top-1/2 lg:space-y-4">
+              <h1 class="text-[14px] text-white text-center lg:text-[62px] font-bold ">End-to-End Travel With <br><span class="text-red-300">Go</span><span class="text-green-300">Bus</span> </h1>
+              <p class="text-[12px] text-white max-w-[100%] lg:text-white lg:text-[18px] text-center lg:max-w-[75%] ">Experience ultimate convenience with GoBus. Seamless travel solutions tailored for comfort, reliability, and unforgettable journeys. Book now!</p>
+              <button class="py-2 lg:btn btn-primary rounded-2xl bg-green-500 text-[14px] font-bold border-none px-8 flex justify-center items-center lg:py-4">Buy Ticket</button>
+            </div>
+          </div>  
+         
+        </div>
+      </section>
+    </header>
+
+    <main class= bg-gray-50>
+      <!-- best offer section -->
+      <div class="flex justify-center">
+        <h1 class="text-[18px] font-semibold lg:text-[36px] py-3 lg:pt-5 px-8">Best Offer For You</h1>
+      </div>
+      <section class="container2 mx-auto">
+        <div class="flex flex-col space-y-3 lg:flex-row justify-between items-center lg:space-y-0">
+          <div class="flex justify-between items-center bg-yellow-400 rounded-3xl max-h-[135px] lg:max-h-[222px]">
+            <div class="px-4 lg:px-5">
+              <h1 class="text-[22px] lg:text-[48px] font-bold">15 % Off</h1>
+              <p class="text-[14px] lg:text-[24px] font-medium">On your Next purchase</p>
+              <p class="text-[12px] lg:text-[16px]">use by january 2024</p>
+            </div>
+            <div class="">
+              <img class="h-[135px] lg:h-[222px]" src="images/cupon-devider.png" alt="">
+            </div>
+            <div class="px-4 lg:px-5">
+              <h1 class="text-[24px] font-bold lg:text-[40px]">NEW15</h1>
+              <p class="text-[12px] lg:text-[20px] font-light">Coupon Code</p>
+            </div>
+          </div>
+  
+          <div class="flex justify-between items-center bg-pink-400 rounded-3xl max-h-[135px] lg:max-h-[222px]">
+            <div class="px-4 lg:px-5">
+              <h1 class="text-[22px] lg:text-[48px] font-bold">20% Off</h1>
+              <p class="text-[14px] lg:text-[24px] font-medium">On your Next purchase</p>
+              <p class="text-[12px] lg:text-[16px]">use by january 2024</p>
+            </div>
+            <div class="">
+              <img class="h-[135px] lg:h-[222px]" src="images/cupon-devider.png" alt="">
+            </div>
+            <div class="px-4 lg:px-5">
+              <h1 class="text-[18px] font-bold lg:text-[40px]">Couple 20</h1>
+              <p class="text-[12px] lg:text-[20px] font-light">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-success justify-center mx-auto items-center flex bg-green-200 my-8">See All Offers</button>
+      </section>
+      <!-- main section mathanosto -->
+      <section class="container2 mx-auto rounded-3xl border-cyan-400"> 
+        <div class="flex flex-col justify-center mx-auto items-center mb-8">
+          <h1 class="text-center font-bold text-[36px]"><span class="text-red-300">Go</span><span class="text-green-300">Bus</span> </h1>
+          <p class="text-center max-w-[95%] text-[14px] px-2 lg:text-[18px] lg:max-w-[70%]">Experience convenience with GoBus. Seamless travel solutions tailored for comfort, reliability, and unforgettable journeys. Book now!</p>
+        </div>
+
+        <div class="flex justify-between items-center bg-white">
+          <div class="px-2 lg:px-8 flex-1">
+            <div class="flex justify-between items-center flex-col space-y-2 lg:flex-row lg:space-y-0">
+              <div class="flex space-x-2 items-center justify-between">
+                <div>
+                  <img src="images/bus-logo.png" alt="">
+                </div>
+                <div>
+                  <h1 class="text-[12px] lg:text-[32px] font-bold">Broom Stick Limited</h1>
+                  <p class="text-gray-700 text-[12px] lg:text-[16px]">Coach-009-web ! AC_business</p>
+                </div>
+              </div>
+              <div class="">
+                <button class=" btn btn-success text-green-500 bg-green-200 flex ">
+                  <img src="images/seat-green.png" alt="">
+                  <h1><span id="total-seat">40</span> seats available</h1>
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 mx-auto p-2 lg:p-8">
+              <div class="flex justify-between items-center p-4">
+                <h1>Route</h1>
+                <p>Dhaka - Sylhet</p>
+              </div>
+              <hr class="divide-dotted"><br>
+              <div class="flex justify-between items-center p-4">
+                <h1>Departure time</h1>
+                <p>9:00 pm</p>
+              </div>
+              <hr><br>
+              <div class="flex justify-between space-x-1 text-[12px] lg:space-x-7 lg:text-[16px] text-center " >
+                <div class="bg-gray-100 p-1 rounded-lg lg:p-4">Boarding point - <span class="font-bold">Laxmipur</span></div>
+                <div class="bg-gray-100 p-1 rounded-lg lg:p-4">Droping point - <span class="font-bold">Bogra</span></div>
+                <div class="bg-gray-100 p-1 rounded-lg lg:p-4">Estd. time -  <span class="font-bold">11 hours</span></div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="hidden lg:block pl-4">
+            <img src="images/info-devider.png" alt="">
+          </div>
+          <div class="hidden lg:block pl-4 flex flex-col justify-center items-center mr-6">
+            <img src="images/fare.png" alt="">
+            <h1 class=" capitalize text-[36px] font-bold">550 taka</h1>
+            <p class="text-gray-700 text-[18px] caption-top">per seat</p>
+          </div>
+
+        </div>
+      </section>
+      <!-- <section class="block lg:hidden">
+        <section class="block rotate-90  lg:hidden">
+          <img class="" src="images/info-devider.png" alt="">
+      </section>
+      <section class="block -translate-y-[345px] flex justify-center lg:hidden">
+        <img src="images/fare.png" alt="">
+      </section>
+      <section class="flex justify-center -translate-y-[345px] flex-col block lg:hidden">
+        <h1 class="text-center font-bold text-[18px]">550 taka</h1>
+        <p class="text-center text-[14px] font-bold">Per Seat</p>
+      </section>
+      </section> -->
+      <!-- mathakharap seection 2 -->
+      <section class="container2 mx-auto bg-white mt-6 p-2 lg:p-8">
+        <!-- main parent div -->
+        <div class="flex flex-col lg:flex-row justify-between ">
+          <div class="">
+            <div><h1 class="capitalize text-[24px] font-medium">select your seat</h1></div>
+            <br>
+            <hr>
+            <br>
+            <div class="flex justify-between items-center">
+              <div class="flex space-x-2">
+                <img src="images/seat-gray.png" alt="">
+                <h1 class="text-gray-700">Available</h1>
+              </div>
+              <div class="flex space-x-2">
+                <img src="images/seat-green-filled.png" alt="">
+                <h1 class="text-gray-700">Selected</h1>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="flex justify-end rounded-xl">
+              <img class="h-[64px] w-[106px] rounded-xl" src="steer.jpeg" alt="">
+            </div>
+            <br>
+            <!-- tickets / seats -->
+            <div class="text-[15px] lg:text-[20px]">
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <button><div id="ticketA1" onclick="getIDinfo()" class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div></button>
+                    <div id="ticketA2" onclick="getIDinfo()" class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div id="ticketA3" onclick="getIDinfo()"  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div id="ticketA4" onclick="getIDinfo()" class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div id="ticketB1" onclick="getIDinfo()" class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div>
+                    <div id="ticketB2" onclick="getIDinfo()" class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2 pr-4 lg:space-x-6 lg:pr-20">
+                  <div>
+                    <h1>A</h1>
+                  </div>
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A1</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A2</h1></div>
+                  </div>
+                </div>
+  
+                <div class="flex items-center">
+                  <div class="flex items-center space-x-2 lg:space-x-10">
+                    <div  class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A3</h1></div>
+                    <div class="bg-gray-100 px-7 py-2 rounded-xl lg:px-10 lg:py-4"><h1>A4</h1></div>
+                  </div>
+                </div>
+              </div>
+           
+            
+            </div>
+
+          </div>
+
+
+          <div class="">
+            <div><h1 class="capitalize text-[24px] font-medium">select your seat</h1></div><br>
+            <hr>
+            <br>
+            <div class="bg-gray-100 p-4 rounded-2xl">
+              <div class="flex items-center justify-between">
+                <h1>Seat <sup><span id="count" class="bg-green-300 p-1 rounded-full">0</span></sup></h1>
+                <p>Class</p>
+                <h1>Price</h1>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <div id="item-container" >
+
+              </div>
+              <br>
+              <hr>
+              <br>
+              <div class="flex justify-between items-center mb-2">
+                <h1>Total price</h1>
+                <h1>BDT <span id="total-price">0</span></h1>
+              </div>
+              <div class="flex justify-between items-center mb-2 w-full">
+                <input id="coupon-input" class=" rounded-lg py-3 px-1 bg-white w-[256px] lg:w-[305px]" type="text" name="" id="" placeholder="Have Any Coupon ?">
+                <button onclick="getDiscount()" class="btn bg-green-500 text-white" disabled>Apply</button>
+              </div>
+              <div class="flex justify-between items-center mt-2">
+                <h1>Grand Total</h1>
+                <h1>BDT <span id="grand-total">0</span></h1>
+              </div>
+            </div>
+            
+            <div class="bg-white p-4">
+              <h1 class="mb-1">Passenger Name <span class="text-red-400">*</span></h1>
+              <input class="mb-1 rounded-lg py-3 px-2 w-full" style="border: 0.5px solid gray;" type="text" name="" id="" placeholder="Enter Your Name">
+              <h1  class="mb-1">Phone Number<span class="text-red-400">*</span></h1>
+              <input id="number-input"  class="mb-1 rounded-lg py-3 px-2 w-full" style="border: 0.5px solid gray;"  type="text" name="" id="" placeholder="Enter Your Phone Number">
+              <h1 class="mb-1">Email ID</h1>
+              <input  class="mb-1 rounded-lg py-3 px-2 w-full" style="border: 0.5px solid gray;" type="email" name="" id="" placeholder="Enter Your Email ID" ><br>
+              <button id="next-button" class="mt-2 btn w-full bg-green-500 text-white font-bold" onclick="my_modal_5.showModal()" disabled>Next</button>
+              <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box overflow-y-hidden  w-full">
+                  <div class="flex justify-center">
+                    <img class="text-center" src="images/success.png" alt="">
+                  </div>
+                  <h3 class="font-bold text-[28px] text-green-500  text-center">Success</h3>
+                  <p class="py-4 text-center text-[16px] font-medium">Thank you for Booking Our Bus Seats. <br> We are working hard to find the best service and deals for you. </p>
+                  <p class="text-center text-gray-800">Shortly you will find a confirmation in your email</p>
+                  <div class="modal-action flex justify-center">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button id="closeButton" class="btn btn-success rounded-3xl text-center justify-center px-16 py-4 text-white text-[18px]">Continue</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              
+              <div class="flex justify-center items-center gap-4 mt-2">
+                <a href="" class="link link-secondary text-[12px] lg:text-[16px]">Terms and Conditions</a>
+                <a href="" class="link link-secondary text-[12px] lg:text-[16px]">Cancellation Policy</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class=" w-full bg-gray-950">
+      <div class="container2 mx-auto flex flex-col justify-between items-center py-8 lg:flex-row">
+        <div class="pb-3">
+          <h1 class="text-[36px] font-bold flex justify-center lg:justify-start"><span class="text-red-300">Go</span><span class="text-green-300">Bus</span></h1>
+          <p class="text-gray-300 text-center text-[14px] max-w-[100%] lg:max-w-[70%] lg:text-start lg:text-[16px]">Reliable, comfortable, affordable travel. Your trusted travel companion</p>
+        </div>
+        <div>
+          <h1 class="text-[16px] text-white font-medium pb-2 lg:text-[20px] text-center">Download Our App</h1>
+          <div class="flex items-center space-x-3 bg-black rounded-xl px-4 py-2" style="border: 1px solid white;">
+
+            <div><img src="images/playstore.png" alt=""></div>
+            <div>
+              <h1 class="uppercase text-white">get it on <br><span class="font-medium text-[20px] capitalize">Google Play</span></h1>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <hr class="max-w-[1170px] mx-auto pb-4 hidden lg:block">
+      
+      <div class="flex flex-col-reverse justify-between items-center container2 mx-auto pb-10 lg:flex-row">
+        <div class="pb-2">
+          <h1 class="text-gray-600  text-[13px] lg:text-[16px]">&copy; All Rights Resered by <span class="text-red-300">Go</span><span class="text-green-300">Bus</span> services Limeted . 2024</h1>
+        </div>
+
+        <div class="flex flex-col text-white space-x-4 pb-2 lg:flex-row">
+          <a href="" class="text-center">Terms and Conditions</a>
+          <a href="" class="text-center">Return and Refund Policy</a>
+          <a href="" class="text-center">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
